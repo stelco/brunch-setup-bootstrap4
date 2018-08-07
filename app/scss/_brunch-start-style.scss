@@ -1,9 +1,50 @@
 // from the original brunch install
 // feel free to delete and create your own further structure
 
-.brunch {
-  font-family: -apple-system, Sans-Serif;
-  text-align: center;
-  font-size: 28pt;
-  color: #3f894a;
+.Gibson-Regular { 
+	font-family: Gibson-Regular;
+	font-weight: normal;
+	font-style: normal;
+}
+.Gibson-SemiBold { 
+	font-family: Gibson-SemiBold;
+	font-weight: normal;
+	font-style: normal;
+}
+.Gibson-Light { 
+	font-family: Gibson-Light;
+	font-weight: normal;
+	font-style: normal;
+}
+
+h1, h2, h3, h4, h5, p {
+	color:#fff;
+}
+
+h1, h2 { 
+	font-family: Gibson-SemiBold; 
+	font-weight: normal; 
+	font-style: normal; 
+}
+
+p, h3, h4 { 
+	font-family: Gibson-Regular; 
+	font-weight: normal; 
+	font-style: normal; 
+}
+
+h5 { 
+	font-family: Gibson-Light; 
+	font-weight: normal; 
+	font-style: normal; 
+}
+
+/*Header*/
+#header, #footer {
+  background: #1f1f1f;
+  font-family: 'Gibson-SemiBold', Arial, sans-serif;
+}
+
+#header img {
+  width: 100%;
 }
