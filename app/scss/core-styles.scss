@@ -1,0 +1,52 @@
+h1, h2 { 
+	font-family: Gibson-SemiBold; 
+	font-weight: normal; 
+	font-style: normal; 
+}
+
+p, h3, h4 { 
+	font-family: Gibson-Regular; 
+	font-weight: normal; 
+	font-style: normal; 
+}
+
+h5 { 
+	font-family: Gibson-Light; 
+	font-weight: normal; 
+	font-style: normal; 
+}
+
+.no-margin {
+	margin: 0;
+}
+
+.type-small {
+	display: inline-block;
+	color: #bdbdbd;
+	font-size: 0.75em;
+	line-height: 1em;
+}
+
+a:hover,
+.text-block
+{
+	outline: 0;
+	text-decoration: none;
+}
+
+/*dark backgrounds*/
+#header, #footer {
+
+	h1, h2, h3, h4, h5, p {
+		color:#fff;
+	}
+
+	background-color: #1f1f1f;
+	font-size: 14px;
+
+	@media (max-width: 767px) {
+		font-size: 0.75em;
+		line-height: 2em;
+	}
+
+}
