@@ -1,4 +1,5 @@
 // See http://brunch.io for documentation.
+
 exports.files = {
   javascripts: {
     joinTo: {
@@ -6,7 +7,8 @@ exports.files = {
       'app.js': /^app/
     }
   },
-  stylesheets: { joinTo: {
+  stylesheets: { 
+    joinTo: {
       'app.css': /^app/
     }
   }
@@ -21,7 +23,15 @@ exports.plugins = {
       includePaths: ['./node_modules/bootstrap/scss/'],
       precision: 8
     }
+  },
+  postcss: {
+    processors: ([
+      require('autoprefixer')(['last 8 versions']),
+      // minify CSS plugin (needs configuring with PostCSS)
+      require('csswring')()
+    ])
   }
+
 };
 
 exports.npm = {

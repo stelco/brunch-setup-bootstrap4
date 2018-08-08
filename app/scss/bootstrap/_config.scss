@@ -24,13 +24,13 @@
 @import "buttons";
 
 // *** Components
-// @import "transitions";
+@import "transitions";
 @import "dropdown";
 // @import "button-group";
 // @import "input-group";
 // @import "custom-forms";
-//@import "nav";
-// @import "navbar";
+@import "nav";
+@import "navbar";
 // @import "card";
 // @import "breadcrumb";
 // @import "pagination";
@@ -61,7 +61,7 @@
 // @import "utilities/screenreaders";
  @import "utilities/spacing";
 // @import "utilities/text";
-// @import "utilities/visibility";
+@import "utilities/visibility";
 
 // *** Print classes
 @import "print";
