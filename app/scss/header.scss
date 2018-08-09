@@ -6,15 +6,19 @@
 	@media (max-width: 767px) {
 		position: absolute;
 		top: 0px;
-		right: 0px;
+		right: 153px;
 		bottom: 0px;
 		z-index: 1;
 		display: block;
 		width: 100%;
-		height: 50%;
+		height: 100%;
 	}
 
-  }
+	}
+	
+	.special-color-dark {
+		background-color: #ffffff1a!important
+	}
   
   .main-nav-alt {
 	  overflow-x:auto;
@@ -66,10 +70,6 @@
 
   @media (max-width: 767px) {
 	position: relative;	
-}
-
-@media (max-width: 991px) {
-    flex-direction: column;
 }
 
 }
@@ -238,7 +238,7 @@
   .gradient-scroll-helper {
 	  display: none;
 
-	  @media (max-width: 479px) {
+	  @media (max-width: 670px) {
 		display: block;
 		}
 
@@ -301,12 +301,15 @@
 	@media (max-width: 479px) {
 		position: relative;
 		overflow: auto;
-		padding-right: 4em;
+		padding-right: 0;
+	}
+
+	@media (max-width: 671px) {
+		padding-right: 1em;
 	}
 
 	@media (max-width: 767px) {
 		overflow: auto;
-		padding-left: 0.5em;
 	}
 
 	@media (max-width: 991px) {
@@ -325,9 +328,10 @@
 	color: #bdbdbd;
 	text-align: center;
 	text-decoration: none;
+	height: inherit;
+  background-color: #181818;
 
 	@media (max-width: 767px) {
-			padding: 1em 0.75em;
 			-webkit-box-flex: 0;
 			-webkit-flex-grow: 0;
 			-ms-flex-positive: 0;
@@ -343,8 +347,11 @@
 
 }
   
-  .main-nav-link:hover {
-	background-color: #000;
+	.main-nav-link:hover,
+	.main-nav-link:focus,
+	.main-nav-link:active
+	{
+	background-color: #263238;
 	color: #fff;
   }
   
@@ -368,15 +375,15 @@
 	color: #fff;
 	text-decoration: none;
 
-	@media (max-width: 991px) {
-		padding-top: 1em;
-		padding-bottom: 1em;
-		justify-content: center;
-		align-items: center;
+	@media (max-width: 768px) {
+		padding-right: 1em;
+		padding-left: 1em;
 		}
 
   }
 
   .nav-holiday-search img {
 	   padding-left: 6px;
-   }
+	 }
+	 
+

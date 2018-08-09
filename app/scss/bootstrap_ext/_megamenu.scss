@@ -1,8 +1,13 @@
+.navbar {
+  padding:0;
+  box-shadow: none!important;
+}
+
 .navbar .mega-dropdown {
     position: static !important; }
   
   .navbar .dropdown-menu.mega-menu {
-    width: 100%;
+    width: 100vw;
     border: none;
     border-radius: 0; }
     .navbar .dropdown-menu.mega-menu.v-2 a {
