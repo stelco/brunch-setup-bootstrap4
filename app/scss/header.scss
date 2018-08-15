@@ -305,6 +305,7 @@
 	align-items: stretch;
 	flex: 1;
 	background-color: #121212;
+	height: 70px;
 
 	@media (max-width: 479px) {
 		position: relative;
@@ -367,7 +368,30 @@
   
   .main-nav-link.dropdown {
 	color: #fff;
-  }
+	}
+	
+/*up caret on .show top nav*/
+	.nav-item.main-nav-link.show:after {
+		content: '';
+		border-left: 8px solid transparent;
+		border-right: 8px solid transparent;
+		border-bottom: 8px solid #fff;
+		position: absolute;
+		bottom: 0;
+		}
+
+		/* hide the drop down caret*/
+		.dropdown-toggle::after,
+		.navbar .dropdown-menu.mega-menu.v-2 .sub-menu ul.caret-style li a:after
+		{
+			display: none;
+		}
+
+		/* hide the active bground color on top nav buttons*/
+		.navbar.navbar-dark .breadcrumb .nav-item.active>.nav-link,
+		.navbar.navbar-dark .navbar-nav .nav-item.active>.nav-link {
+			background-color: transparent!important;
+		}
 
   @media (max-width: 479px) {
 	.nav-overflow-helper {

@@ -6187,7 +6187,7 @@ a.waves-effect, a.waves-light {
     position: absolute !important;
     margin-top: -1px; }
     .navbar .dropdown-menu a {
-      padding: 10px;
+      padding: 0;
       font-size: 0.9375rem;
       font-weight: 300;
       color: #fff !important; }
@@ -6213,9 +6213,11 @@ a.waves-effect, a.waves-light {
     .navbar.navbar-light .breadcrumb .nav-item .nav-link:hover,
     .navbar.navbar-light .navbar-nav .nav-item .nav-link:hover {
       color: rgba(0, 0, 0, 0.7); }
-  .navbar.navbar-light .breadcrumb .nav-item.active > .nav-link,
+
+/*   .navbar.navbar-light .breadcrumb .nav-item.active > .nav-link,
   .navbar.navbar-light .navbar-nav .nav-item.active > .nav-link {
-    background-color: rgba(0, 0, 0, 0.1); }
+    background-color: rgba(0, 0, 0, 0.1); } */
+
     .navbar.navbar-light .breadcrumb .nav-item.active > .nav-link:hover,
     .navbar.navbar-light .navbar-nav .nav-item.active > .nav-link:hover {
       color: #000; }
