@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Destinology Prototypes</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-TXfwrfuHVznxCssTxWoPZjhcss/hp38gEOH8UPZG/JcXonvBQ6SlsIF49wUzsGno"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="/app.css">
   <script src="modernizr.custom.js"></script>
   <script src="/vendor.js"></script>
@@ -20,34 +21,35 @@
   <div id="header" class="container-fluid px-0">
     <div class="header-top">
       <div class="logo">
-        <img src="https://uploads-ssl.webflow.com/5b60194f6abb671905382e81/5b601b1607bc3e78489d6cb5_logo-horiz.svg">
+        <img src="img/logo-horiz.svg">
       </div>
       <div class="logo logo-small">
-        <img src="https://uploads-ssl.webflow.com/5b60194f6abb671905382e81/5b6069be01c35d61e3c81d23_Logomark-wht.svg">
+        <img src="img/Logomark-wht.svg">
       </div>
-      <div class="header-top-callus">
-        <p class="no-margin pr-3">Call us on 01204 123 456
+      <div class="header-top-call">
+        <p class="no-margin">Call us on 01204 123 456
           <br>
         </p>
-        <div>
+        <div class="call-us">
           <div class="call-active"></div>
           <div class="type-small">We are here till 10pm</div>
         </div>
       </div>
       <div class="header-top-navblock">
         <a href="#" class="navblock-item callus w-inline-block">
-          <img src="https://uploads-ssl.webflow.com/5b60194f6abb671905382e81/5b60632b71d5d238c7553bd8_phone.svg">
+            <i class="far fa-phone"></i>
           <div class="text-block">9am - 10pm</div>
         </a>
         <a href="#" class="navblock-item search w-inline-block">
-          <img src="https://uploads-ssl.webflow.com/5b60194f6abb671905382e81/5b6021fb07bc3e7ab19d756b_search.svg">
+            <i class="far fa-search"></i>
           <div class="text-block">Search</div>
         </a>
-        <a href="#" class="navblock-item w-inline-block">
-          <img src="https://uploads-ssl.webflow.com/5b60194f6abb671905382e81/5b6021fb3f9c401fa2caec80_user.svg">
+        <a href="#" class="navblock-item login w-inline-block">
+            <i class="far fa-user-alt"></i>
           <div class="text-block">Log in</div>
         </a>
-        <a href="#" id="trigger" class="menu-trigger navblock-item w-inline-block">
+        <a href="#" id="trigger" class="navblock-item menu-trigger w-inline-block">
+          <img src="img/nav-menu.svg">
           <div class="text-block">Menu</div>
         </a>
       </div>
@@ -57,9 +59,10 @@
     <div id="header" class="header-bottom">
 
       <!--gradient on mobile scroller-->
-      <div class="gradient-scroll-helper">
+      <!--       <div class="gradient-scroll-helper">
         <div class="gradient-helper"></div>
-      </div>
+      </div> -->
+
       <!--Navbar-->
       <nav class="main-nav navbar navbar-expand-lg navbar-dark special-color-dark">
         <!-- Links -->
@@ -69,89 +72,137 @@
             <a class="nav-link dropdown-toggle text-uppercase no-caret" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">Destinations</a>
             <div class="dropdown-menu mega-menu v-2 row z-depth-1" aria-labelledby="navbarDropdownMenuLink1">
-              <div class="row mx-md-4 mx-1">
-                <div class="col-md-6 col-xl-3 sub-menu my-xl-5 mt-5 mb-4">
-                  <h5 class="sub-title text-uppercase ">Popular Destinations</h5>
-                  <h6 class="sub-title text-uppercase ">View All Destinations</h6>
-                  <ul class=" pl-0">
-                    <li class="">
+              <div class="row mx-md-4 mt-4">
+                <div class="col-md-3 col-xl-3 pr-0">
+                  <h6 class="sub-title">Popular Destinations</h6>
+                </div>
+                <div class="col-md-3 col-xl-3 pl-0">
+                  <h6 class="sub-title view-all pl-0">View All Destinations</h6>
+                </div>
+                <div class="col-md-3 col-xl-3 pr-0">
+                  <h6 class="sub-title">Where can we take you?</h6>
+                </div>
+                <div class="col-md-3 col-xl-3 pl-0">
+                  <h6 class="sub-title view-all">View All Destinations</h6>
+                </div>
+              </div>
+              <div class="row mx-md-4 mx-1 pb-4">
+                <div class="col-2 sub-menu ">
+                  <ul class="pl-0">
+                    <li>
                       <a class="menu-item mb-0" href="">Dubai</a>
                     </li>
-                    <li class="">
+                    <li>
                       <a class="menu-item" href="">Mauritius</a>
                     </li>
-                    <li class="">
+                    <li>
                       <a class="menu-item" href="">Greece</a>
                     </li>
-                    <li class="">
+                    <li>
                       <a class="menu-item" href="">Maldives</a>
                     </li>
-                    <li class="">
+                    <li>
                       <a class="menu-item" href="">Spain</a>
                     </li>
                   </ul>
                 </div>
-                <div class="col-md-6 col-xl-3 sub-menu my-xl-5 mt-md-5 mt-4 mb-4">
-                  <h5 class="sub-title text-uppercase  white-text">Where can we take you?</h5>
-                  <ul class=" pl-0">
-                    <li class="">
+                <div class="col-2 sub-menu">
+                  <ul class="pl-0">
+                    <li>
                       <a class="menu-item" href="">Africa</a>
                     </li>
-                    <li class="">
+                    <li>
                       <a class="menu-item" href="">Australasia</a>
                     </li>
-                    <li class="">
+                    <li>
                       <a class="menu-item" href="">Canada</a>
                     </li>
-                    <li class="">
+                    <li>
                       <a class="menu-item" href="">Caribbean</a>
                     </li>
-                    <li class="">
+                    <li>
                       <a class="menu-item" href="">Europe</a>
                     </li>
                   </ul>
                 </div>
-                <div class="col-md-6 col-xl-3 sub-menu my-xl-5 mt-4 mb-4">
-                  <h5 class="sub-title text-uppercase  white-text">Something else</h5>
-                  <ul class=" pl-0">
-                    <li class="">
-                      <a class="menu-item" href="">Excepteur sint occaecat</a>
+                <div class="col-2 sub-menu">
+                  <ul class="pl-0">
+                    <li>
+                      <a class="menu-item" href="">Africa</a>
                     </li>
-                    <li class="">
-                      <a class="menu-item" href="">Sunt in culpa qui officia</a>
+                    <li>
+                      <a class="menu-item" href="">Australasia</a>
                     </li>
-                    <li class="">
-                      <a class="menu-item" href="">Sed ut perspiciatis unde omnis iste natus error</a>
+                    <li>
+                      <a class="menu-item" href="">Canada</a>
                     </li>
-                    <li class="">
-                      <a class="menu-item" href="">Mollit anim id est laborum</a>
+                    <li>
+                      <a class="menu-item" href="">Caribbean</a>
                     </li>
-                    <li class="">
-                      <a class="menu-item" href="">Accusantium doloremque laudantium</a>
+                    <li>
+                      <a class="menu-item" href="">Europe</a>
                     </li>
                   </ul>
                 </div>
-                <div class="col-md-6 col-xl-3 sub-menu my-xl-5 mt-4 mb-5">
-                  <h5 class="sub-title text-uppercase  white-text">Something else</h5>
-                  <ul class=" pl-0">
-                    <li class="">
-                      <a class="menu-item" href="">Totam rem aperiam eaque</a>
+                <div class="col-2 sub-menu ">
+                  <ul class="pl-0">
+                    <li>
+                      <a class="menu-item mb-0" href="">Dubai</a>
                     </li>
-                    <li class="">
-                      <a class="menu-item" href="">Beatae vitae dicta sun</a>
+                    <li>
+                      <a class="menu-item" href="">Mauritius</a>
                     </li>
-                    <li class="">
-                      <a class="menu-item" href="">Quae ab illo inventore veritatis et quasi architecto</a>
+                    <li>
+                      <a class="menu-item" href="">Greece</a>
                     </li>
-                    <li class="">
-                      <a class="menu-item" href="">Nemo enim ipsam voluptatem</a>
+                    <li>
+                      <a class="menu-item" href="">Maldives</a>
                     </li>
-                    <li class="">
-                      <a class="menu-item" href="">Neque porro quisquam est</a>
+                    <li>
+                      <a class="menu-item" href="">Spain</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-2 sub-menu">
+                  <ul class="pl-0">
+                    <li>
+                      <a class="menu-item" href="">Africa</a>
+                    </li>
+                    <li>
+                      <a class="menu-item" href="">Australasia</a>
+                    </li>
+                    <li>
+                      <a class="menu-item" href="">Canada</a>
+                    </li>
+                    <li>
+                      <a class="menu-item" href="">Caribbean</a>
+                    </li>
+                    <li>
+                      <a class="menu-item" href="">Europe</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-2 sub-menu">
+                  <ul class="pl-0">
+                    <li>
+                      <a class="menu-item" href="">Africa</a>
+                    </li>
+                    <li>
+                      <a class="menu-item" href="">Australasia</a>
+                    </li>
+                    <li>
+                      <a class="menu-item" href="">Canada</a>
+                    </li>
+                    <li>
+                      <a class="menu-item" href="">Caribbean</a>
+                    </li>
+                    <li>
+                      <a class="menu-item" href="">Europe</a>
                     </li>
                   </ul>
                 </div>
               </div>
+
             </div>
           </li>
           <li class="nav-item main-nav-link dropdown">
@@ -190,6 +241,7 @@
       <!--/.Navbar-->
     </div>
   </div>
+
   <!-- MultiLevel (mobile)-menu -->
   <!-- Push Wrapper -->
   <div class="mp-pusher" id="mp-pusher">
@@ -197,19 +249,33 @@
     <!-- mp-menu -->
     <nav id="mp-menu" class="mp-menu">
       <div class="mp-level">
-        <h2 class="icon icon-world">All Categories</h2>
+        <div class="row">
+          <div class="col-6">
+            <div class="logo logo-nav">
+              <img src="img/Logomark-wht.svg">
+            </div>
+          </div>
+          <div class="col-6">
+            <a href="#" id="trigger" class="navblock-item menu-trigger right">
+              <i class="fal fa-times"></i>
+              <div class="text-block">Close</div>
+            </a>
+          </div>
+        
+        </div>
+
         <ul>
-          <li class="icon icon-arrow-left">
-            <a class="icon icon-display" href="#">Devices</a>
+          <li>
+            <a class="mp-level-link" href="#">Destinations</a>
             <div class="mp-level">
-              <h2 class="icon icon-display">Devices</h2>
-              <a class="mp-back" href="#">back</a>
+              <h2 class="mp-level-logo">Destinations</h2>
+              <a class="mp-back" href="#">Back</a>
               <ul>
                 <li class="icon icon-arrow-left">
                   <a class="icon icon-phone" href="#">Mobile Phones</a>
                   <div class="mp-level">
                     <h2>Mobile Phones</h2>
-                    <a class="mp-back" href="#">back</a>
+                    <a class="mp-back" href="#">Back</a>
                     <ul>
                       <li>
                         <a href="#">Super Smart Phone</a>
@@ -230,7 +296,7 @@
                   <a class="icon icon-tv" href="#">Televisions</a>
                   <div class="mp-level">
                     <h2>Televisions</h2>
-                    <a class="mp-back" href="#">back</a>
+                    <a class="mp-back" href="#">Back</a>
                     <ul>
                       <li>
                         <a href="#">Flat Superscreen</a>
@@ -254,7 +320,7 @@
                   <a class="icon icon-camera" href="#">Cameras</a>
                   <div class="mp-level">
                     <h2>Cameras</h2>
-                    <a class="mp-back" href="#">back</a>
+                    <a class="mp-back" href="#">Back</a>
                     <ul>
                       <li>
                         <a href="#">Smart Shot</a>
@@ -274,11 +340,11 @@
               </ul>
             </div>
           </li>
-          <li class="icon icon-arrow-left">
-            <a class="icon icon-news" href="#">Magazines</a>
+          <li>
+            <a class="mp-level-link" href="#">Holiday Types</a>
             <div class="mp-level">
-              <h2 class="icon icon-news">Magazines</h2>
-              <a class="mp-back" href="#">back</a>
+              <h2 class="mp-level-logo">Holiday Types</h2>
+              <a class="mp-back" href="#">Back</a>
               <ul>
                 <li>
                   <a href="#">National Geographic</a>
@@ -301,23 +367,23 @@
               </ul>
             </div>
           </li>
-          <li class="icon icon-arrow-left">
-            <a class="icon icon-shop" href="#">Store</a>
+          <li>
+            <a class="mp-level-link" href="#">Offers</a>
             <div class="mp-level">
-              <h2 class="icon icon-shop">Store</h2>
-              <a class="mp-back" href="#">back</a>
+              <h2 class="mp-level-logo">Offers</h2>
+              <a class="mp-back" href="#">Back</a>
               <ul>
                 <li class="icon icon-arrow-left">
                   <a class="icon icon-t-shirt" href="#">Clothes</a>
                   <div class="mp-level">
                     <h2 class="icon icon-t-shirt">Clothes</h2>
-                    <a class="mp-back" href="#">back</a>
+                    <a class="mp-back" href="#">Back</a>
                     <ul>
                       <li class="icon icon-arrow-left">
                         <a class="icon icon-female" href="#">Women's Clothing</a>
                         <div class="mp-level">
                           <h2 class="icon icon-female">Women's Clothing</h2>
-                          <a class="mp-back" href="#">back</a>
+                          <a class="mp-back" href="#">Back</a>
                           <ul>
                             <li>
                               <a href="#">Tops</a>
@@ -341,7 +407,7 @@
                         <a class="icon icon-male" href="#">Men's Clothing</a>
                         <div class="mp-level">
                           <h2 class="icon icon-male">Men's Clothing</h2>
-                          <a class="mp-back" href="#">back</a>
+                          <a class="mp-back" href="#">Back</a>
                           <ul>
                             <li>
                               <a href="#">Shirts</a>
@@ -374,10 +440,94 @@
             </div>
           </li>
           <li>
-            <a class="icon icon-photo" href="#">Collections</a>
+            <a href="#">Cruise</a>
           </li>
           <li>
-            <a class="icon icon-wallet" href="#">Credits</a>
+            <a class="icon icon-wallet" href="#">Tailor Made Tours</a>
+          </li>
+          <li>
+            <a class="mp-level-link" href="#">About Us</a>
+            <div class="mp-level">
+              <h2 class="mp-level-logo">About Us</h2>
+              <a class="mp-back" href="#">Back</a>
+              <ul>
+                <li class="icon icon-arrow-left">
+                  <a class="icon icon-phone" href="#">Mobile Phones</a>
+                  <div class="mp-level">
+                    <h2>Mobile Phones</h2>
+                    <a class="mp-back" href="#">Back</a>
+                    <ul>
+                      <li>
+                        <a href="#">Super Smart Phone</a>
+                      </li>
+                      <li>
+                        <a href="#">Thin Magic Mobile</a>
+                      </li>
+                      <li>
+                        <a href="#">Performance Crusher</a>
+                      </li>
+                      <li>
+                        <a href="#">Futuristic Experience</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="icon icon-arrow-left">
+                  <a class="icon icon-tv" href="#">Televisions</a>
+                  <div class="mp-level">
+                    <h2>Televisions</h2>
+                    <a class="mp-back" href="#">Back</a>
+                    <ul>
+                      <li>
+                        <a href="#">Flat Superscreen</a>
+                      </li>
+                      <li>
+                        <a href="#">Gigantic LED</a>
+                      </li>
+                      <li>
+                        <a href="#">Power Eater</a>
+                      </li>
+                      <li>
+                        <a href="#">3D Experience</a>
+                      </li>
+                      <li>
+                        <a href="#">Classic Comfort</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="icon icon-arrow-left">
+                  <a class="icon icon-camera" href="#">Cameras</a>
+                  <div class="mp-level">
+                    <h2>Cameras</h2>
+                    <a class="mp-back" href="#">Back</a>
+                    <ul>
+                      <li>
+                        <a href="#">Smart Shot</a>
+                      </li>
+                      <li>
+                        <a href="#">Power Shooter</a>
+                      </li>
+                      <li>
+                        <a href="#">Easy Photo Maker</a>
+                      </li>
+                      <li>
+                        <a href="#">Super Pixel</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">Inspirations</a>
+          </li>
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+          <li>
+            <a href="#">Login</a>
           </li>
         </ul>
 

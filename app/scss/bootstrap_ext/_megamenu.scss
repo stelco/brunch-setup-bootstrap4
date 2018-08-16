@@ -43,7 +43,13 @@
     .navbar .dropdown-menu.mega-menu.v-2 .sub-title {
       padding-bottom: 1rem;
       margin-bottom: 1rem;
-    font-family: 'Gibson-SemiBold';
+      border-bottom: 1px solid #ccc;
+      font-family: 'Gibson-SemiBold';
     }
+      .navbar .dropdown-menu.mega-menu.v-2 .sub-title.view-all {
+        text-align: right;
+        font-family: 'Gibson-Regular';
+      }
+    
     .navbar .dropdown-menu.mega-menu.v-2 .font-small {
       font-size: 0.85rem; }
