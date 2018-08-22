@@ -37,32 +37,38 @@
       </div>
       <div class="header-top-navblock">
         <a href="#" class="navblock-item callus w-inline-block">
-            <i class="far fa-phone"></i>
+          <i class="far fa-phone"></i>
           <div class="text-block">9am - 10pm</div>
         </a>
-        <a href="#" class="navblock-item search w-inline-block">
-            <i class="far fa-search"></i>
+        <a href="#" class="navblock-item search w-inline-block" id="navbarDropdownSearch">
+          <i class="far fa-search"></i>
           <div class="text-block">Search</div>
         </a>
         <a href="#" class="navblock-item login w-inline-block">
-            <i class="far fa-user-alt"></i>
+          <i class="far fa-user-alt"></i>
           <div class="text-block">Log in</div>
         </a>
         <a href="#" id="trigger" class="navblock-item menu-trigger w-inline-block">
-          <img src="img/nav-menu.svg">
+          <i class="fal fa-bars"></i>
           <div class="text-block">Menu</div>
         </a>
       </div>
     </div>
-
+          <!--Nav Search Desktop-->
+          <div class="desktop-nav-search">
+              <div class="row mx-md-4 my-3">
+                <div class="col-7">
+                    <i class="fal fa-search fa-2x"></i>            
+                    <input type="text" name="search-holidays" placeholder="Where can we take you?">
+                </div>
+                <div class="col-5">
+                    <button type="button" class="btn btn-sm btn-gradient-primary">Search</button>
+                    <button type="button" class="btn btn-sm btn-outline-dark" id="navbarDropdownSearch">Close</button>
+                </div>
+              </div>
+            </div>
     <!--Bootstrap Material Design Mega Menu-->
     <div id="header" class="header-bottom">
-
-      <!--gradient on mobile scroller-->
-      <!--       <div class="gradient-scroll-helper">
-        <div class="gradient-helper"></div>
-      </div> -->
-
       <!--Navbar-->
       <nav class="main-nav navbar navbar-expand-lg navbar-dark special-color-dark">
         <!-- Links -->
@@ -234,47 +240,35 @@
         <!-- Links -->
       </nav>
       <!--Holiday Search-->
+      <!--Nav Search Mobile-->
       <a href="#" class="nav-holiday-search w-inline-block">
         <div>Holiday Search</div>
-        <img src="https://uploads-ssl.webflow.com/5b60194f6abb671905382e81/5b60389faaff487171696b51_arrow.svg">
+        <i class="fal fa-arrow-right"></i>
       </a>
       <!--/.Navbar-->
     </div>
+
   </div>
+
 
   <!-- MultiLevel (mobile)-menu -->
   <!-- Push Wrapper -->
   <div class="mp-pusher" id="mp-pusher">
-
     <!-- mp-menu -->
     <nav id="mp-menu" class="mp-menu">
       <div class="mp-level">
-        <div class="row">
-          <div class="col-6">
-            <div class="logo logo-nav">
-              <img src="img/Logomark-wht.svg">
-            </div>
-          </div>
-          <div class="col-6">
-            <a href="#" id="trigger" class="navblock-item menu-trigger right">
-              <i class="fal fa-times"></i>
-              <div class="text-block">Close</div>
-            </a>
-          </div>
-        
+        <div class="mp-search">
+          <input type="text" name="search-holidays" placeholder="Search">
         </div>
-
         <ul>
           <li>
             <a class="mp-level-link" href="#">Destinations</a>
             <div class="mp-level">
-              <h2 class="mp-level-logo">Destinations</h2>
               <a class="mp-back" href="#">Back</a>
               <ul>
-                <li class="icon icon-arrow-left">
-                  <a class="icon icon-phone" href="#">Mobile Phones</a>
+                <li>
+                  <a class="mp-level-link" href="#">Middle East</a>
                   <div class="mp-level">
-                    <h2>Mobile Phones</h2>
                     <a class="mp-back" href="#">Back</a>
                     <ul>
                       <li>
@@ -292,8 +286,8 @@
                     </ul>
                   </div>
                 </li>
-                <li class="icon icon-arrow-left">
-                  <a class="icon icon-tv" href="#">Televisions</a>
+                <li>
+                  <a class="mp-level-link" href="#">Indian Ocean</a>
                   <div class="mp-level">
                     <h2>Televisions</h2>
                     <a class="mp-back" href="#">Back</a>
@@ -316,8 +310,176 @@
                     </ul>
                   </div>
                 </li>
-                <li class="icon icon-arrow-left">
-                  <a class="icon icon-camera" href="#">Cameras</a>
+                <li>
+                  <a class="mp-level-link" href="#">Europe</a>
+                  <div class="mp-level">
+                    <h2>Cameras</h2>
+                    <a class="mp-back" href="#">Back</a>
+                    <ul>
+                      <li>
+                        <a href="#">Smart Shot</a>
+                      </li>
+                      <li>
+                        <a href="#">Power Shooter</a>
+                      </li>
+                      <li>
+                        <a href="#">Easy Photo Maker</a>
+                      </li>
+                      <li>
+                        <a href="#">Super Pixel</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a class="mp-level-link" href="#">Caribbean</a>
+                  <div class="mp-level">
+                    <h2>Cameras</h2>
+                    <a class="mp-back" href="#">Back</a>
+                    <ul>
+                      <li>
+                        <a href="#">Smart Shot</a>
+                      </li>
+                      <li>
+                        <a href="#">Power Shooter</a>
+                      </li>
+                      <li>
+                        <a href="#">Easy Photo Maker</a>
+                      </li>
+                      <li>
+                        <a href="#">Super Pixel</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a class="mp-level-link" href="#">Far East</a>
+                  <div class="mp-level">
+                    <h2>Cameras</h2>
+                    <a class="mp-back" href="#">Back</a>
+                    <ul>
+                      <li>
+                        <a href="#">Smart Shot</a>
+                      </li>
+                      <li>
+                        <a href="#">Power Shooter</a>
+                      </li>
+                      <li>
+                        <a href="#">Easy Photo Maker</a>
+                      </li>
+                      <li>
+                        <a href="#">Super Pixel</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a class="mp-level-link" href="#">Mexico</a>
+                  <div class="mp-level">
+                    <h2>Cameras</h2>
+                    <a class="mp-back" href="#">Back</a>
+                    <ul>
+                      <li>
+                        <a href="#">Smart Shot</a>
+                      </li>
+                      <li>
+                        <a href="#">Power Shooter</a>
+                      </li>
+                      <li>
+                        <a href="#">Easy Photo Maker</a>
+                      </li>
+                      <li>
+                        <a href="#">Super Pixel</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a class="mp-level-link" href="#">North America</a>
+                  <div class="mp-level">
+                    <h2>Cameras</h2>
+                    <a class="mp-back" href="#">Back</a>
+                    <ul>
+                      <li>
+                        <a href="#">Smart Shot</a>
+                      </li>
+                      <li>
+                        <a href="#">Power Shooter</a>
+                      </li>
+                      <li>
+                        <a href="#">Easy Photo Maker</a>
+                      </li>
+                      <li>
+                        <a href="#">Super Pixel</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a class="mp-level-link" href="#">Australasia</a>
+                  <div class="mp-level">
+                    <h2>Cameras</h2>
+                    <a class="mp-back" href="#">Back</a>
+                    <ul>
+                      <li>
+                        <a href="#">Smart Shot</a>
+                      </li>
+                      <li>
+                        <a href="#">Power Shooter</a>
+                      </li>
+                      <li>
+                        <a href="#">Easy Photo Maker</a>
+                      </li>
+                      <li>
+                        <a href="#">Super Pixel</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a class="mp-level-link" href="#">Africa</a>
+                  <div class="mp-level">
+                    <h2>Cameras</h2>
+                    <a class="mp-back" href="#">Back</a>
+                    <ul>
+                      <li>
+                        <a href="#">Smart Shot</a>
+                      </li>
+                      <li>
+                        <a href="#">Power Shooter</a>
+                      </li>
+                      <li>
+                        <a href="#">Easy Photo Maker</a>
+                      </li>
+                      <li>
+                        <a href="#">Super Pixel</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a class="mp-level-link" href="#">South Pacific</a>
+                  <div class="mp-level">
+                    <h2>Cameras</h2>
+                    <a class="mp-back" href="#">Back</a>
+                    <ul>
+                      <li>
+                        <a href="#">Smart Shot</a>
+                      </li>
+                      <li>
+                        <a href="#">Power Shooter</a>
+                      </li>
+                      <li>
+                        <a href="#">Easy Photo Maker</a>
+                      </li>
+                      <li>
+                        <a href="#">Super Pixel</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a class="mp-level-link" href="#">Indian and Sub Continent</a>
                   <div class="mp-level">
                     <h2>Cameras</h2>
                     <a class="mp-back" href="#">Back</a>
@@ -373,13 +535,13 @@
               <h2 class="mp-level-logo">Offers</h2>
               <a class="mp-back" href="#">Back</a>
               <ul>
-                <li class="icon icon-arrow-left">
+                <li>
                   <a class="icon icon-t-shirt" href="#">Clothes</a>
                   <div class="mp-level">
                     <h2 class="icon icon-t-shirt">Clothes</h2>
                     <a class="mp-back" href="#">Back</a>
                     <ul>
-                      <li class="icon icon-arrow-left">
+                      <li>
                         <a class="icon icon-female" href="#">Women's Clothing</a>
                         <div class="mp-level">
                           <h2 class="icon icon-female">Women's Clothing</h2>
@@ -403,7 +565,7 @@
                           </ul>
                         </div>
                       </li>
-                      <li class="icon icon-arrow-left">
+                      <li>
                         <a class="icon icon-male" href="#">Men's Clothing</a>
                         <div class="mp-level">
                           <h2 class="icon icon-male">Men's Clothing</h2>
@@ -451,8 +613,8 @@
               <h2 class="mp-level-logo">About Us</h2>
               <a class="mp-back" href="#">Back</a>
               <ul>
-                <li class="icon icon-arrow-left">
-                  <a class="icon icon-phone" href="#">Mobile Phones</a>
+                <li>
+                  <a class="mp-level-link" href="#">Mobile Phones</a>
                   <div class="mp-level">
                     <h2>Mobile Phones</h2>
                     <a class="mp-back" href="#">Back</a>
@@ -472,7 +634,7 @@
                     </ul>
                   </div>
                 </li>
-                <li class="icon icon-arrow-left">
+                <li>
                   <a class="icon icon-tv" href="#">Televisions</a>
                   <div class="mp-level">
                     <h2>Televisions</h2>
@@ -496,7 +658,7 @@
                     </ul>
                   </div>
                 </li>
-                <li class="icon icon-arrow-left">
+                <li>
                   <a class="icon icon-camera" href="#">Cameras</a>
                   <div class="mp-level">
                     <h2>Cameras</h2>
@@ -529,12 +691,24 @@
           <li>
             <a href="#">Login</a>
           </li>
+          <li class="nav-modal__callus">
+            <img src="https://d2no6onenl3oko.cloudfront.net/staffprofiles/3130.jpg">
+            <div>
+              <h6>Need help?</h6>
+              <p class="no-margin">Call us on 01204 123 456
+                <br>
+              </p>
+              <div class="call-us">
+                <div class="call-active"></div>
+                <div class="type-small">We are here till 10pm</div>
+              </div>
+            </div>
+          </li>
         </ul>
 
       </div>
     </nav>
     <!-- /mp-menu -->
-
     <div class="scroller">
       <!-- this is for emulating position fixed of the nav -->
       <div class="scroller-inner">
@@ -542,10 +716,8 @@
       <!-- /scroller-inner -->
     </div>
     <!-- /scroller -->
-
   </div>
   <!-- /pusher -->
-
   <!-- SCRIPTS -->
   <!--Waves - add ripple animtion effect to button click-->
   <script type="text/javascript" src="waves.js"></script>
@@ -558,4 +730,4 @@
       type: 'cover'
     });
   </script>
-</body>
+  </body>

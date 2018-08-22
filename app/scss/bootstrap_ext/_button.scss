@@ -1,18 +1,13 @@
-// Example for overwriting and extending bootstrap components
+.btn-gradient-primary {
+  @include gradient-x($start-color: #721BE0, $end-color: #A93AF1, $start-percent: 0%, $end-percent: 100%);
+  border: none;
+}
 
-.btn {
-  $button-border-width: 2px;
+.btn-outline-primary {
+  color: #711BE0;
+}
 
-  border-width: $button-border-width;
-
-  &.btn-dark {
-    background-color: $black;
-    border-color: $black;
-    color: $white;
-
-    &:hover {
-      background-color: $white;
-      color: $black;
-    }
-  }
+.btn-lg {
+  margin-right: 10px;
+  font-size: 1em;
 }

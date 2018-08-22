@@ -41,8 +41,6 @@ html, body, .container, .scroller {
 .menu-trigger {
 	position: relative;
 	padding-left: 60px;
-	font-size: 0.9em;
-
 }
 
 .mp-pusher {
@@ -53,7 +51,7 @@ html, body, .container, .scroller {
 
 .mp-menu {
 	position: absolute;
-	top: -152px;
+	top: -72px;
 	z-index: 1;
 	width: 100vw;
 	height: 100%;
@@ -183,6 +181,7 @@ html, body, .container, .scroller {
 		font-family: 'Font Awesome 5 Pro';
 		right: 30px;
 		position: absolute;
+		z-index: -1;
 	}
 
 /* content style */
@@ -191,8 +190,6 @@ html, body, .container, .scroller {
 	padding: 0;
 	list-style: none;
 }
-
-
 
 .mp-menu.mp-overlap h2::before {
 	position: absolute;
@@ -259,27 +256,29 @@ html, body, .container, .scroller {
 	box-shadow: inset 0 -1px rgba(0,0,0,0);
 }
 
-.mp-menu .mp-level.mp-level-overlay > ul > li > a,
+/* .mp-menu .mp-level.mp-level-overlay > ul > li > a,
 .mp-level.mp-level-overlay > ul > li:first-child > a {
 	box-shadow: inset 0 -1px rgba(0,0,0,0);
-}
+} */
 
 .mp-level > ul > li:first-child > a:hover,
 .mp-level.mp-level-overlay > ul > li:first-child > a {
 	box-shadow: inset 0 -1px rgba(0,0,0,0), inset 0 1px rgba(0,0,0,0);
 } /* seems like Chrome 34.0.1847.131 needs the second shadow otherwise the transition breaks */
 
-#mp-menu .mp-back {
+#mp-menu .mp-back,
+#mp-menu .mp-search
+{
 	background-color: #282828;
 	color: #fff;
 	display: block;
-	margin: 2.7em 0 1em 0;
 	position: relative;
 	box-shadow: inset 0 1px rgba(0, 0, 0, 0.1);
 	-webkit-transition: background 0.3s;
 	-moz-transition: background 0.3s;
 	transition: background 0.3s;
 	padding: 0.5em 3em;
+	margin-bottom: 10px;
 }
 
 #mp-menu .mp-back:before {
@@ -287,6 +286,48 @@ html, body, .container, .scroller {
 	font-family: 'Font Awesome 5 Pro';
 	left: 28px;
 	position: absolute;
+}
+
+#mp-menu .mp-search:before {
+	content: "\f002";
+	font-family: 'Font Awesome 5 Pro';
+	left: 28px;
+	position: absolute;
+}
+
+#mp-menu .mp-search input
+{
+	background: transparent;
+	border: none;
+	margin-left: 10px;
+	color: #fff;
+}
+
+.desktop-nav-search {
+	display:none;
+	color: #ccc;
+	background-color: #fff;
+	border: 1px solid #282828;
+	position: relative;
+}
+
+.desktop-nav-search:after {
+	content: '';
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid #fff;
+	position: absolute;
+	top: -7px;
+	right: 160px;
+}
+
+.desktop-nav-search input {
+	font-family: 'Gibson-Regular';
+	font-size: 1.5em;
+	color: #ccc;
+	margin-left: 20px;
+	border: none;
+	width: 70%;
 }
 
 #mp-menu .fa-chevron-right {
@@ -300,9 +341,41 @@ html, body, .container, .scroller {
 	color: transparent;
 }
 
+.mp-menu .nav-modal__callus {
+	display: flex;
+	width: 100%;
+	background-color: #fff;
+	position: absolute;
+	justify-content: center;
+	padding: 20px 0;
+	border: 4px solid #181818;
+	z-index: -1;
+	color: #282828;
+}
+
+.mp-menu .nav-modal__callus img {
+	position:relative;
+  }
+
+  .mp-menu .nav-modal__callus img {
+    -ms-border-radius:50%;
+	border-radius:50%;
+	border:solid 2px #fff;
+	width: 60px;
+	height: 60px;
+	margin-right: 10px;
+}
+
+.mp-menu .nav-modal__callus h6 {
+font-family: 'Gibson-SemiBold';
+margin: 0;
+}
+  
+
 #header .fa-phone,
 #header .fa-search,
-#header .fa-user-alt
+#header .fa-user-alt,
+#header .fa-bars
 {
 	margin: 3px 8px;
 }
@@ -310,6 +383,10 @@ html, body, .container, .scroller {
 #mp-menu .fa-times
 {
 	padding-right: 13px;
+}
+
+#header .fa-arrow-right {
+	padding-left: 10px;
 }
 
 /* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */

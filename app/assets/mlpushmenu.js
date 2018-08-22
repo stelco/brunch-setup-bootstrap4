@@ -237,6 +237,15 @@
 		}
 	}
 
+	/*toggle desktop search*/
+	$(document).ready(function(){
+		$('#navbarDropdownSearch').on('click', clickButton);    
+		function clickButton()
+		{
+		  $('.desktop-nav-search').stop().slideToggle();
+		}
+	  });
+
 	// add to global namespace
 	window.mlPushMenu = mlPushMenu;
 
