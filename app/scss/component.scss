@@ -19,11 +19,11 @@ html, body, .container, .scroller {
 	position: relative;
 }
 
-.container {
+/* .container {
 	position: relative;
 	overflow: hidden;
 	background: #34495e;
-}
+} */
 
 @media (min-width: 768px) {
 	#trigger {
@@ -330,10 +330,6 @@ html, body, .container, .scroller {
 	width: 70%;
 }
 
-#mp-menu .fa-chevron-right {
-	float: right;
-}
-
 .mp-menu .mp-level.mp-level-overlay > .mp-back,
 .mp-menu .mp-level.mp-level-overlay > .mp-back::after {
 	background: transparent;
@@ -372,22 +368,7 @@ margin: 0;
 }
   
 
-#header .fa-phone,
-#header .fa-search,
-#header .fa-user-alt,
-#header .fa-bars
-{
-	margin: 3px 8px;
-}
 
-#mp-menu .fa-times
-{
-	padding-right: 13px;
-}
-
-#header .fa-arrow-right {
-	padding-left: 10px;
-}
 
 /* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
 /* We'll show the first level only */
@@ -404,9 +385,4 @@ margin: 0;
 .no-csstransforms3d .mp-menu > .mp-level,
 .no-js .mp-menu > .mp-level {
 	display: block;
-}
-
-/*fill nav bar button height with waves*/
-.waves-effect {
-	padding: 24px 0;
 }

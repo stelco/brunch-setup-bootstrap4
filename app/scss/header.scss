@@ -1,5 +1,6 @@
 /*Header*/
 
+/*scroller may not be required as fits within viewpoint before breakpoint*/
 .gradient-scroll-helper {
 	pointer-events:none; 
 
@@ -367,6 +368,14 @@
 }  
   .main-nav-link.dropdown {
 	color: #fff;
+	cursor: pointer;
+	}
+
+	#header .main-nav .dropdown-menu {
+		top: 97%;
+		border: 1px solid #000;
+		border-width: 0 1px 1px 1px;
+		border-radius: 0;
 	}
 	
 /*up caret on .show top nav*/

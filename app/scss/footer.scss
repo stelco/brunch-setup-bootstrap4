@@ -1,0 +1,93 @@
+/*Promo Img*/
+#footer .img__block {
+  background-image: url("https://images.pexels.com/photos/827058/pexels-photo-827058.jpeg?auto=compress&cs=tinysrgb&h=350");
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+          background-size: cover;
+  padding: 8em 0 0 0;
+/*   margin: 8em 0; */
+  color: #fff;
+  position: relative;
+
+  @media (min-width: 769px) {
+    background-image: url("https://images.pexels.com/photos/827058/pexels-photo-827058.jpeg?auto=compress&cs=tinysrgb&h=350");
+  }
+@media (min-width: 992px) {
+    background-image: url("https://images.pexels.com/photos/827058/pexels-photo-827058.jpeg?auto=compress&cs=tinysrgb&h=350");
+    background-attachment: fixed;
+  }
+
+  .btn {
+    border-radius: 20px;
+  }
+
+}
+
+  #footer .img__block:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-gradient(linear, left top, right top, from(#711BE0), to(#5fdfc1));
+    background-image: -webkit-linear-gradient(left, #711BE0 0%, #5fdfc1 100%);
+    background-image: -o-linear-gradient(left, #711BE0 0%, #5fdfc1 100%);
+    background-image: linear-gradient(90deg, #711BE0 0%, #5fdfc1 100%);
+    mix-blend-mode: overlay;
+    opacity: .5;
+    pointer-events: none;
+    z-index: -1; }
+
+/*USP bar*/
+    #footer .promo__usp {
+        padding: 10em 0 2em 0;
+        
+        .usp--img {
+        float: left;
+        height: 100%;
+        padding-right: 15px; }
+    }
+
+/*Award Creds*/
+    #footer .awards__creds {
+        padding: 4em 0;
+		border: 1px solid #979797;
+        border-width: 1px 0 1px 0;
+        
+        div:nth-child(2) > img {
+            float: right;
+                }
+            }
+            
+/*Links & Social*/
+#footer .links__social {
+    padding: 4em 0;
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    ul > li {
+        padding: 0.6em 0;
+    }
+    .btn {
+        border-radius: 0;
+    }
+    input {
+        height: 37px;
+        width: 75%;
+    }
+    .social--media 
+    {
+    padding: 4em 0;
+
+        img {
+            float: left;
+            padding-right: 15px;
+            height: 80%;
+        }
+        h4 {
+            text-transform: uppercase;
+            font-family: 'Gibson-SemiBold';
+            font-size: 1em;
+        }
+    } 
+}

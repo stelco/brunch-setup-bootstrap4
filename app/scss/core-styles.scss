@@ -38,6 +38,30 @@ a:hover,
 	text-decoration: none;
 }
 
+/*icon adjustments*/
+
+.fa-phone,
+.fa-search,
+.fa-user-alt,
+.fa-bars,
+.fa-envelope-open
+{
+	margin: 3px 8px;
+}
+
+#mp-menu .fa-times
+{
+	padding-right: 13px;
+}
+
+#header .fa-arrow-right {
+	padding-left: 10px;
+}
+
+#mp-menu .fa-chevron-right {
+	float: right;
+}
+
 /*dark backgrounds*/
 #header, #footer {
 
