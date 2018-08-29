@@ -38,6 +38,10 @@ a:hover,
 	text-decoration: none;
 }
 
+#Proto a {
+	color: #000;
+}
+
 /*icon adjustments*/
 
 .fa-phone,
@@ -65,11 +69,15 @@ a:hover,
 /*dark backgrounds*/
 #header, #footer {
 
-	h1, h2, h3, h4, h5, p {
+	h1, h2, h3, h4, h5 {
 		color:#fff;
 	}
 	background-color: #1f1f1f;
 	font-size: 14px;
+}
+
+#header p {
+	color: #000;
 }
 
 #header .main-nav h6 {

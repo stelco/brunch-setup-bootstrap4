@@ -348,6 +348,7 @@
 		text-decoration: none;
 		height: inherit;
 		background-color: #181818;
+		cursor: pointer;
 
 	@media (max-width: 767px) {
 			-webkit-box-flex: 0;
@@ -372,10 +373,10 @@
 	}
 
 	#header .main-nav .dropdown-menu {
-		top: 97%;
 		border: 1px solid #000;
 		border-width: 0 1px 1px 1px;
 		border-radius: 0;
+		margin: auto;
 	}
 	
 /*up caret on .show top nav*/
@@ -385,7 +386,7 @@
 		border-right: 8px solid transparent;
 		border-bottom: 8px solid #fff;
 		position: absolute;
-		bottom: 0;
+		bottom: -1px;
 		}
 
 		/* hide the drop down caret*/
