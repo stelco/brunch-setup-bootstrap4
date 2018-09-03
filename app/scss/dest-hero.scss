@@ -1,0 +1,131 @@
+/*Promo Card*/
+
+#dest-hero {
+    padding: 3em 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 581px) {
+        padding: 1.5em 0 3em 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h5 {
+        font-family: 'Gibson-SemiBold';
+        color: #000;
+    }
+
+    .promo-hero-header .logo {
+        @media only screen and (max-width: 960px) {
+            max-width: 255px;
+        }
+
+        @media only screen and (max-width: 720px) {
+            max-width: 194px;
+        }
+    }
+
+    .promo-hero-header .call-btn {
+        display: none;
+        border-radius: 50%;
+        animation: pulse 2s infinite;
+
+        @media only screen and (max-width: 581px) {
+            display: block;
+        }
+    }
+
+    .promo-hero p {
+        max-width: 38em;
+    }
+
+    @media only screen and (max-width: 581px) {
+        .promo-hero .display-4 {
+            font-size: 3.5em;
+        }
+
+        .promo-hero h5 {
+            font-size: 1.25em;
+        }
+    }
+
+    .dest--hero-content {
+        padding: 0 3em;
+
+        i.fal {
+            margin: 10px;
+        }
+
+        a {
+            color: #bf8eff;
+        }
+        p {
+            line-height: 24px;
+        }
+    }
+
+    .dest--hero-cta {
+        background-color: white;
+        border-radius: 1em;
+        margin: 0 auto;
+        padding: 3em;
+        color: #111;
+        text-align: center;
+        max-height: 400px;
+
+        li:before {
+            font-family: 'Font Awesome 5 Pro';
+            content: '\f00c';
+            margin: 0 10px 0 -24px;
+            color: green;
+        }
+
+        h4 {
+            color: #000;
+            font-family: "Gibson-Regular";
+        }
+
+        img {
+            margin-top: -90px;
+            width: 100%;
+            max-width: 193px;
+        }
+    }
+
+    .dest--hero-cta ul li {
+        text-align: left;
+        margin-bottom: 1em;
+    }
+
+    .btn {
+        border-radius: 20px;
+        padding: 10px;
+    }
+}
+
+
+.dest--overview-accordian {
+
+    .panel-heading {
+        padding: 1em;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ccc;
+        a {
+            color: #fff;
+        }
+        a:before {
+            font-family: 'Font Awesome 5 Pro';
+            content: "\f078";
+            float: right;
+            transition: all 0.5s;
+         }
+         .active a:before {
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            transform: rotate(180deg);
+        } 
+    }
+}

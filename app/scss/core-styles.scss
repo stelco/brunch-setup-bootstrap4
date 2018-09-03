@@ -1,45 +1,47 @@
-h1, h2 { 
-	font-family: Gibson-SemiBold; 
-	font-weight: normal; 
-	font-style: normal; 
+h1, h2 {
+    font-family: Gibson-SemiBold;
+    font-weight: normal;
+    font-style: normal;
 }
 
-p, h3, h4 { 
-	font-family: Gibson-Regular; 
-	font-weight: normal; 
-	font-style: normal; 
+p, h3, h4 {
+    font-family: Gibson-Regular;
+    font-weight: normal;
+	font-style: normal;
 }
 
-h5 { 
-	font-family: Gibson-Light; 
-	font-weight: normal; 
-	font-style: normal; 
+h5 {
+    font-family: Gibson-Light;
+    font-weight: normal;
+    font-style: normal;
 }
 
 .no-margin {
-	margin: 0;
+    margin: 0;
 }
 
 .type-small {
-	display: inline-block;
-	color: #bdbdbd;
-	font-size: 0.75em;
-	line-height: 1em;
+    color: #bdbdbd;
+    font-size: 0.75em;
+    line-height: 1em;
 }
 
 a:hover {
-color: rgba(255,255,255,.75)
+    color: rgba(255, 255, 255, 0.75);
 }
 
 a:hover,
-.text-block
-{
-	outline: 0;
-	text-decoration: none;
+.text-block {
+    outline: 0;
+    text-decoration: none;
 }
 
 #Proto a {
-	color: #000;
+    color: #000;
+}
+
+.purple {
+	color: #6f42c1
 }
 
 /*icon adjustments*/
@@ -48,38 +50,58 @@ a:hover,
 .fa-search,
 .fa-user-alt,
 .fa-bars,
-.fa-envelope-open
-{
-	margin: 3px 8px;
+.fa-envelope-open {
+    margin: 3px 8px;
 }
 
-#mp-menu .fa-times
-{
-	padding-right: 13px;
+#mp-menu .fa-times {
+    padding-right: 13px;
 }
 
 #header .fa-arrow-right {
-	padding-left: 10px;
+    padding-left: 10px;
 }
 
 #mp-menu .fa-chevron-right {
-	float: right;
+    float: right;
+}
+
+/* Using font awesome in a list */
+ul {
+    padding-left: 20px;
+    list-style: none;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.block {
+	display: block;
+}
+
+.inline-block {
+	display: inline-block;
 }
 
 /*dark backgrounds*/
-#header, #footer {
+#header, #footer, #dest-hero {
+    h1, h2, h3, h4, h5 {
+        color: #fff;
+    }
 
-	h1, h2, h3, h4, h5 {
-		color:#fff;
-	}
-	background-color: #1f1f1f;
-	font-size: 14px;
+    background-color: #1f1f1f;
+    font-size: 14px;
 }
 
 #header p {
-	color: #000;
+    color: #000;
 }
 
 #header .main-nav h6 {
-	color:#181818;
+    color: #181818;
 }
