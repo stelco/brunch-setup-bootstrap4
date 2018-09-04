@@ -72,6 +72,10 @@ ul {
     list-style: none;
 }
 
+ul li:last-child {
+margin-bottom: 40px;
+}
+
 li {
     margin-bottom: 10px;
 }
@@ -88,8 +92,13 @@ li {
 	display: inline-block;
 }
 
+/*add a margin around icons*/
+i.fal {
+    margin: 10px;
+}
+
 /*dark backgrounds*/
-#header, #footer, #dest-hero {
+#header, #footer, #dest-overview {
     h1, h2, h3, h4, h5 {
         color: #fff;
     }

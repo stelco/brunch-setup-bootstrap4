@@ -1,6 +1,6 @@
 /*Promo Card*/
 
-#dest-hero {
+#dest-overview {
     padding: 3em 0;
     margin: 0 auto;
     display: flex;
@@ -11,11 +11,6 @@
         padding: 1.5em 0 3em 0;
         display: flex;
         justify-content: space-between;
-    }
-
-    h5 {
-        font-family: 'Gibson-SemiBold';
-        color: #000;
     }
 
     .promo-hero-header .logo {
@@ -55,13 +50,10 @@
     .dest--hero-content {
         padding: 0 3em;
 
-        i.fal {
-            margin: 10px;
-        }
-
-        a {
+        > p > a {
             color: #bf8eff;
         }
+
         p {
             line-height: 24px;
         }
@@ -75,6 +67,11 @@
         color: #111;
         text-align: center;
         max-height: 400px;
+
+        h5 {
+            font-family: 'Gibson-SemiBold';
+            color: #000;
+        }
 
         li:before {
             font-family: 'Font Awesome 5 Pro';
@@ -106,26 +103,60 @@
     }
 }
 
-
 .dest--overview-accordian {
+    padding-bottom: 4em;
 
     .panel-heading {
-        padding: 1em;
-        margin-bottom: 20px;
-        border-bottom: 1px solid #ccc;
+        padding: 0.5em 0;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #909090;
+        cursor: pointer;
+
         a {
             color: #fff;
         }
+
         a:before {
             font-family: 'Font Awesome 5 Pro';
             content: "\f078";
             float: right;
             transition: all 0.5s;
-         }
-         .active a:before {
+        }
+
+        .active a:before {
             -webkit-transform: rotate(180deg);
             -moz-transform: rotate(180deg);
             transform: rotate(180deg);
-        } 
+        }
+
+        h5 {
+            font-family: 'Gibson-SemiBold';
+            color: #fff;
+        }
+    }
+}
+
+.dest--overview-accordian .panel-heading.active a:before {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.dest--overview-popular {
+    position: relative;
+    display: inline-block;
+
+    .card-1 {
+        height: 420px;
+        width: 268px;
+        border-radius: 5px;
+        text-align: center;
+        padding: 3em 2em;
+
+        .detail--card-1 {
+            position: absolute;
+            bottom: 30px;
+            align-items: flex-end;
+        }
     }
 }

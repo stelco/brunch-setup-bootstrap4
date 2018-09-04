@@ -27,7 +27,7 @@
       <a class="nav-link" id="footer-tab" data-toggle="tab" href="#footer" role="tab" aria-controls="profile" aria-selected="false">Footer</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" id="dest-hero-tab" data-toggle="tab" href="#dest-hero" role="tab" aria-controls="profile" aria-selected="false">Destinations
+      <a class="nav-link" id="dest-overview-tab" data-toggle="tab" href="#dest-overview" role="tab" aria-controls="profile" aria-selected="false">Destinations
         (Overview)
       </a>
     </li>
@@ -1055,9 +1055,9 @@
         </div>
       </div>
 
-      <!--Dest Hero-->
-      <div class="tab-pane fade show active" id="dest-hero" role="tabpanel" aria-labelledby="dest-hero-tab">
-        <div id="dest-hero">
+      <!--Dest Overview-->
+      <div class="tab-pane fade show active" id="dest-overview" role="tabpanel" aria-labelledby="dest-overview-tab">
+        <div id="dest-overview">
           <div class="container-fluid">
             <div class="container">
               <div class="row">
@@ -1080,54 +1080,135 @@
                   </p>
 
                   <div class="row text-center my-5">
-                    <div class="col-sm-3">
+                    <div class="col-sm-3 col-6 mb-3">
                       <i class="fal fa-sun fa-3x"></i>
                       <div class="type-small my-1">Todays high</div>
                       <div>32°C</div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-3 col-6 mb-3">
                       <i class="fal fa-clock fa-3x"></i>
                       <div class="type-small my-1">+4h GMT</div>
                       <div>4:20pm</div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-3 col-6 mb-3">
                       <i class="fal fa-pound-sign fa-3x"></i>
                       <div class="type-small my-1">UAE Dirham</div>
                       <div>£1 = 4.47dh</div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-3 col-6 mb-3">
                       <i class="fal fa-plane fa-3x"></i>
                       <div class="type-small my-1">LDN - DXB</div>
                       <div>~6.5h</div>
                     </div>
                   </div>
 
+                  <!--Accordian-->
                   <div class="row dest--overview-accordian">
-                      <div class="col-12">
-                          <div class="panel-heading" id="headingOne">
-                              <h2>
-                                  <a data-toggle="collapse" data-target="#destOverview-whentovisit" aria-expanded="true" aria-controls="destOverview-whentovisit">
-                                      When to Visit
-                                  </a>
-                              </h2>
-                          </div>
-                          <div id="destOverview-whentovisit" class="panel-collapse collapse in" aria-labelledby="headingOne" data-parent="#usefulLinks">
-                              <div class="card-body">
-                                  <div class="row">
-                                      <div class="col-12">
-                                          <ul>
-                                              <li><a href="#">****</a></li>
-                                              <li><a href="#">****</a></li>
-                                              <li><a href="#">****</a></li>
-                                              <li><a href="#">****</a></li>
-                                              <li><a href="#">****</a></li>
-                                              <li><a href="#">****</a></li>
-                                          </ul>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
+                    <!--When to visit-->
+                    <div class="col-12" id="over-accordian">
+                      <div class="panel-heading" id="whentovisit">
+                        <h5>
+                          <a href="#destOverview-whentovisit" data-toggle="collapse" data-target="#destOverview-whentovisit" aria-expanded="true" aria-controls="destOverview-whentovisit"
+                            data-parent="#over-accordian">
+                            When to Visit
+                          </a>
+                        </h5>
                       </div>
+                      <div id="destOverview-whentovisit" class="panel-collapse collapse in" aria-labelledby="whentovisit" data-parent="#destOverview-whentovisit">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-12">
+                              <ul>
+                                <li><a href="#">****</a></li>
+                                <li><a href="#">****</a></li>
+                                <li><a href="#">****</a></li>
+                                <li><a href="#">****</a></li>
+                                <li><a href="#">****</a></li>
+                                <li><a href="#">****</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!--Passport & Visa-->
+                      <div class="panel-heading" id="passandvisa">
+                        <h5>
+                          <a href="#destOverview-passandvisa" data-toggle="collapse" data-target="#destOverview-passandvisa" aria-expanded="true" aria-controls="destOverview-passandvisa"
+                            data-parent="#over-accordian">
+                            Passport & Visa
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="destOverview-passandvisa" class="panel-collapse collapse in" aria-labelledby="passandvisa" data-parent="#destOverview-passandvisa">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-12">
+                              <ul>
+                                <li><a href="#">****</a></li>
+                                <li><a href="#">****</a></li>
+                                <li><a href="#">****</a></li>
+                                <li><a href="#">****</a></li>
+                                <li><a href="#">****</a></li>
+                                <li><a href="#">****</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!--Food & Drink-->
+                      <div class="panel-heading" id="fooddrink">
+                        <h5>
+                          <a href="#destOverview-fooddrink" data-toggle="collapse" data-target="#destOverview-fooddrink" aria-expanded="true" aria-controls="destOverview-fooddrink"
+                            data-parent="#over-accordian">
+                            Food & Drink
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="destOverview-fooddrink" class="panel-collapse collapse in" aria-labelledby="fooddrink" data-parent="#destOverview-fooddrink">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-12">
+                              <ul>
+                                <li><a href="#">****</a></li>
+                                <li><a href="#">****</a></li>
+                                <li><a href="#">****</a></li>
+                                <li><a href="#">****</a></li>
+                                <li><a href="#">****</a></li>
+                                <li><a href="#">****</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!--Culture-->
+                      <div class="panel-heading" id="culture">
+                        <h5>
+                          <a href="#destOverview-culture" data-toggle="collapse" data-target="#destOverview-culture" aria-expanded="true" aria-controls="destOverview-culture"
+                            data-parent="#over-accordian">
+                            Culture
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="destOverview-culture" class="panel-collapse collapse in" aria-labelledby="culture" data-parent="#destOverview-culture">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-12">
+                              <ul>
+                                <li><a href="#">****</a></li>
+                                <li><a href="#">****</a></li>
+                                <li><a href="#">****</a></li>
+                                <li><a href="#">****</a></li>
+                                <li><a href="#">****</a></li>
+                                <li><a href="#">****</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
 
                 </div>
@@ -1146,14 +1227,60 @@
                   <button type="button" class="btn btn-block btn-gradient-primary mr-2 mt-2">
                     Enquire today
                   </button>
+                  <div id="feefo-service-review-carousel-widgetId" class="feefo-review-carousel-widget-service"></div>
                 </div>
 
               </div>
-              <div id="feefo-service-review-carousel-widgetId" class="feefo-review-carousel-widget-service"></div>
+
+              <!--Popular Places-->
+              <div class="row">
+                <div class="col-3 dest--overview-popular">
+                  <div class="card-1" style="background: url(https://images.destinology.co.uk/Athena/ThemeImages/371/1cf2a92e400a4b0aa71dca580f6cd1ce-banner.jpg) no-repeat center center; background-size: cover;">
+                    <h2>Dubai</h2>
+                    <h5>An isloated out of this world corner</h5>
+                    <div class="row detail--card-1">
+                      <div class="col-4">
+                        <i class="fal fa-hotel fa-2x"></i>
+                        <div>41 hotels</div>
+                      </div>
+                      <div class="col-4">
+                        <i class="fal fa-ship fa-2x">
+                        </i>
+                        <div>160 cruises</div>
+                      </div>
+                      <div class="col-4">
+                        <i class="fal fa-book-open fa-2x">
+                        </i>
+                        <div>2 tours</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 dest--overview-popular">
+                  <div class="card-1" style="background: url(https://images.destinology.co.uk/Athena/ThemeImages/371/1cf2a92e400a4b0aa71dca580f6cd1ce-banner.jpg) no-repeat center center; background-size: cover;">
+                    <h2>Dubai</h2>
+                    <h5>An isloated out of this world corner</h5>
+                  </div>
+                </div>
+                <div class="col-3 dest--overview-popular">
+                  <div class="card-1" style="background: url(https://images.destinology.co.uk/Athena/ThemeImages/371/1cf2a92e400a4b0aa71dca580f6cd1ce-banner.jpg) no-repeat center center; background-size: cover;">
+                    <h2>Dubai</h2>
+                    <h5>An isloated out of this world corner</h5>
+                  </div>
+                </div>
+                <div class="col-3 dest--overview-popular">
+                  <div class="card-1" style="background: url(https://images.destinology.co.uk/Athena/ThemeImages/371/1cf2a92e400a4b0aa71dca580f6cd1ce-banner.jpg) no-repeat center center; background-size: cover;">
+                    <h2>Dubai</h2>
+                    <h5>An isloated out of this world corner</h5>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
 
         </div>
+
       </div>
     </div>
   </div>
