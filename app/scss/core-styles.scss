@@ -1,3 +1,22 @@
+body {
+    background-color: #181818;
+}
+
+.component {
+    margin-top: 35px;
+}
+
+.proto-template .nav-tabs {
+    background-color: #000;
+    position: relative;
+    z-index: 9999999;
+    width: 100%;
+}
+
+.col.resizable {
+    border: 2px solid black;background: #ccc;height: 170px;
+}
+
 h1, h2 {
     font-family: Gibson-SemiBold;
     font-weight: normal;
@@ -97,14 +116,8 @@ i.fal {
     margin: 10px;
 }
 
-/*dark backgrounds*/
-#header, #footer, #dest-overview {
-    h1, h2, h3, h4, h5 {
-        color: #fff;
-    }
-
-    background-color: #1f1f1f;
-    font-size: 14px;
+body {
+    background-color: #ddd;
 }
 
 #header p {
