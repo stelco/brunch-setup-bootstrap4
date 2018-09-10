@@ -23,10 +23,13 @@
           <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Footer</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Destinations (Overview)</a>
+          <a class="nav-link" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="false">Destinations (Overview)</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="contact-tab2" data-toggle="tab" href="#contact2" role="tab" aria-controls="contact2" aria-selected="false">Destinations (Popular Areas)</a>
+          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Popular Areas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="contact-tab2" data-toggle="tab" href="#contact2" role="tab" aria-controls="contact2" aria-selected="false">Product Cards</a>
         </li>
       </ul>
       <div class="tab-content" id="myTabContent">
@@ -36,10 +39,13 @@
         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
           <div class="inc_" data-template="./partials/p_footer.html"></div>
         </div>
+        <div class="tab-pane fade" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+          <div class="inc_" data-template="./partials/p_overview.html"></div>
+        </div>
         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
           <div class="inc_" data-template="./partials/p_popularareas.html"></div>
         </div>
-        <div class="tab-pane fade" id="contact2" role="tabpanel" aria-labelledby="contact-tab2">
+        <div class="tab-pane fade" id="contact2" role="tabpanel" aria-labelledby="contact2-tab">
           <div class="inc_" data-template="./partials/p_productcards.html"></div>
         </div>
     </div>

@@ -1,11 +1,12 @@
 /*Promo Card*/
 
 #dest-overview {
-    padding: 3em 0;
+    padding: 4em 0;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #181818;
 
     @media only screen and (max-width: 581px) {
         padding: 1.5em 0 3em 0;
