@@ -43,7 +43,6 @@
     align-self: flex-end;
     /*bring in front of overlay*/
     z-index: 11;
-    height: 70px;
 }
 
 .product--right-arrow {
@@ -76,6 +75,7 @@
 
 .card--product .product--description {
     color: rgba(17,17,17,0.4);
+    padding-top: 10px;
 }
 
 .card--product .product--star-rating {
@@ -166,6 +166,7 @@
     flex-direction: column;
     .product__icons {
         flex-grow: 0;
+        align-self: inherit;
     }
 }
 
@@ -188,26 +189,15 @@
     width: 363px;
     display: flex;
     align-items: flex-end;
-
-    .product__clip-path
-    {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        padding: 1.5em;
-        text-align: left;
-        flex-wrap: wrap;
-        background-color: #fff;
-        color: #b1b1b1;
-        -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
-        clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+    .product__icons {
+        color: #828282;
+        margin-bottom: 10px;
     }
-
 }
 
 /*Holiday Type Overview within an Area*/
 
-.card__area--holiday-types--overview {
+.card__content--overview {
     /*Area copy layout*/
     background: url("http://kennedy.byu.edu/wp-content/uploads/2015/03/Middle-East-Studies-Arabic-800x560.jpg");
     background-repeat: no-repeat;
@@ -232,13 +222,19 @@
 /*Holiday Type - Specific Page*/
 /*Hotel, Cruise, Tour*/
 
-.card__holiday-type {
-    display: flex;
+.card__content {
+        display: flex;
         justify-content: space-between;
         padding: 1.5em 1.5em 0.5em 1.5em;
         text-align: left;
         flex-wrap: wrap;
         background-color: #fff;
         min-height: 270px;
+}
+
+.card__content.clip-path
+{
+    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
 }
 
