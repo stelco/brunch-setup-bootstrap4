@@ -11,10 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
   if ($('btn')) {
     console.log('jQuery works')
   }
-
-
-  // initialize wow.js to watch when animations are scrolled into view
-  new WOW().init();
   
   /*collapse (accordian) chevron*/
   $('.panel-collapse').on('show.bs.collapse', function () {
